@@ -219,27 +219,34 @@ h1 {
 }
 .subscribe input:focus {
     border: 2px solid var(--special-color);
-    box-shadow: 0 0 5px rgba(123,
-        31,
-        162, .5);
 }
 .subscribe input::placeholder {
     color: #bbb;
     font-size: 1rem;
     font-family: 'Space Grotesk', sans-serif;
 }
-.subscribe button {
-    padding: 10px 20px;
-    border: none;
-    background: var(--special-color);
-    color: white;
-    border-radius: 5px;
-    height: 3rem;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
+.subscribe a {
+    box-shadow: 0 0 10px rgba(123,
+    31,
+        162, .5);
+        border: none;
+        background: var(--special-color);
+        color: white;
+        border-radius: 5px;
+        height: 3rem;
+        width: 100%;
+        cursor: pointer;
+        transition: background 0.3s;
+        font-family: 'Space Grotesk', sans-serif;
+        padding: 10px 20px;
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+        text-decoration: none;
+        margin: 1rem 0;
+    }
 .subscribe button:hover {
     background: var(--tertiary-color);
 }
@@ -331,7 +338,7 @@ h1 {
         padding: 0;
         
     }
-    .subscribe input, .subscribe button {
+    .subscribe a {
         height: 4.5rem;
         font-size: 1.4rem;
         /* text-transform: uppercase; */
